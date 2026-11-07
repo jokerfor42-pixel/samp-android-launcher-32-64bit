@@ -149,11 +149,6 @@ android {
             ndk {
                 debugSymbolLevel 'FULL'
             }
-            externalNativeBuild {
-                cmake {
-                    cppFlags "-DENABLE_RENDER_DIAGNOSTICS=1 -DDIAG_BUILD=1"
-                }
-            }
         }
         all {
             multiDexEnabled true
